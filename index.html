@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Game Developer</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.7rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 12px auto 0;
+      opacity: 0.95;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #93c5fd;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #020617;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.55);
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      color: #60a5fa;
+    }
+
+    .project-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover .project-img {
+      transform: scale(1.05);
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Nama Anda</h1>
+    <p>Game Developer yang berfokus pada gameplay programming, sistem game, dan pengalaman pemain yang imersif.</p>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya adalah Game Developer dengan pengalaman mengembangkan game 2D dan 3D menggunakan Unity, Godot, dan Unreal Engine.
+      Terbiasa mengerjakan proyek dari tahap konsep hingga rilis, baik secara individu maupun tim.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Keahlian</h2>
+    <div class="skills">
+      <div class="card">C# / C++ / GDScript</div>
+      <div class="card">Unity, Unreal Engine, Godot</div>
+      <div class="card">Gameplay & AI Programming</div>
+      <div class="card">UI/UX & Game Systems</div>
+      <div class="card">PC, Mobile, WebGL</div>
+      <div class="card">Git & Version Control</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Proyek Game</h2>
+    <div class="projects">
+
+      <div class="card">
+        <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" class="project-img" alt="Echoes of Valen">
+        <h3>Echoes of Valen</h3>
+        <p><strong>Platform:</strong> PC (Unity)</p>
+        <p>
+          Action RPG dengan sistem combat berbasis stamina dan AI musuh menggunakan state machine.
+        </p>
+        <a href="#">GitHub / Demo</a>
+      </div>
+
+      <div class="card">
+        <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" class="project-img" alt="Sky Hopper">
+        <h3>Sky Hopper</h3>
+        <p><strong>Platform:</strong> Android</p>
+        <p>
+          Game arcade casual dengan leaderboard dan achievement Google Play.
+        </p>
+        <a href="#">Play Store</a>
+      </div>
+
+      <div class="card">
+        <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" class="project-img" alt="Dungeon Tactics">
+        <h3>Dungeon Tactics</h3>
+        <p><strong>Platform:</strong> PC (Godot)</p>
+        <p>
+          Prototype turn-based tactics dengan sistem grid dan pathfinding A*.
+        </p>
+        <a href="#">itch.io</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Kontak</h2>
+    <p>Email: yourname@email.com</p>
+    <p>GitHub: <a href="#">github.com/username</a></p>
+    <p>Itch.io: <a href="#">itch.io/yourname</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Nama Anda — Game Developer
+  </footer>
+
+</body>
+</html>
