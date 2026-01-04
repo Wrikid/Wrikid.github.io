@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Game Developer</title>
+
+  <style>
+    /* === GLOBAL === */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(
+        180deg,
+        #020617 0%,
+        #0f172a 50%,
+        #020617 100%
+      );
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    /* === HEADER === */
+    header {
+      background: linear-gradient(0deg, #092250, #5a6dac);
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #93c5fd;
+      box-shadow: 0 0 30px rgba(147, 197, 253, 0.45);
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.7rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 12px auto 0;
+      opacity: 0.95;
+    }
+
+    @media (max-width: 600px) {
+      .profile-photo {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    /* === SECTION === */
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      background: linear-gradient(
+        180deg,
+        rgba(2,6,23,0.9),
+        rgba(15,23,42,0.9)
+      );
+      border-radius: 18px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #93c5fd;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* === SKILLS === */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 600px) {
+      .skills {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* === PROJECTS === */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #020617;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.55);
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      color: #60a5fa;
+    }
+
+    /* === VIDEO === */
+    .project-img {
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover .project-img {
+      transform: scale(1.05);
+    }
+
+    /* === LINK === */
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* === FOOTER === */
+    footer {
+      background: linear-gradient(180deg, #020617, #000);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="images/profile.png" alt="Foto Rizki Dharma Satya" class="profile-photo">
+    <h1>Rizki Dharma Satya</h1>
+    <p>Game Development Enthusiast</p>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a fresh graduate in Game Development with experience developing 2D and 3D games using Unity and Unreal Engine through academic and personal projects.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills & Experience</h2>
+    <div class="skills">
+      <div class="card">C# & C++ (Unity & Unreal Engine)</div>
+      <div class="card">3D Modelling & Animation (Blender)</div>
+      <div class="card">Game Design (Figma & Krita)</div>
+      <div class="card">Git & Version Control</div>
+    </div>
+  </section>
+
+  <!-- GAME PROJECTS -->
+  <section>
+    <h2>Game Projects</h2>
+    <div class="projects">
+
+      <div class="card">
+        <video class="project-img" autoplay muted loop playsinline>
+          <source src="videos/vom.mp4" type="video/mp4">
+        </video>
+        <h3>Village of Mystery</h3>
+        <p><strong>Platform:</strong> Windows </p>
+        <p><strong>Tool:</strong> Unreal Engine </p>
+        <p>
+          3D Horror game where the player must look for the clue why his brother
+          been missing for months and what actually happened in the village.
+        </p>
+        <a href="https://github.com/rikkyd/MyFirstGame_Rizki-Dharma-Satya">GitHub / Demo</a>
+      </div>
+
+      <div class="card">
+        <video class="project-img" autoplay muted loop playsinline>
+          <source src="videos/sga.mp4" type="video/mp4">
+        </video>
+        <h3>Srikandi's Great Adventure</h3>
+        <p><strong>Platform:</strong> Windows </p>
+        <p><strong>Tool:</strong> Unity </p>
+        <p>
+          2D Top-down adventure game where the player as Dewi Srikandi will
+          enter a tower to find and defeat the person who killed Dewi Sumbrada.
+        </p>
+        <a href="https://jamu-productions.itch.io/srikandis-great-adventure">itch.io</a>
+      </div>
+
+      <div class="card">
+        <video class="project-img" autoplay muted loop playsinline>
+          <source src="videos/lp.mp4" type="video/mp4">
+        </video>
+        <h3>Lembar Penyesalan</h3>
+        <p><strong>Platform:</strong> Windows </p>
+        <p><strong>Tool:</strong> Unity </p>
+        <p>
+          2D Side Scrolling Psychological Horror where the player must look for
+          the clue to find who she is.
+        </p>
+        <a href="https://rikid1710.itch.io/life-or-death-memories">itch.io</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RELEVANT EXPERIENCE -->
+  <section>
+    <h2>Relevant Experience</h2>
+    <div class="projects">
+
+      <div class="card">
+        <video class="project-img" autoplay muted loop playsinline>
+          <source src="videos/design.mp4" type="video/mp4">
+        </video>
+        <h3>Game Design</h3>
+        <p><strong>Tools:</strong> Figma & Krita </p>
+        <p>
+          Level design of "Lembar Penyesalan"
+        </p>
+      </div>
+
+      <div class="card">
+        <video class="project-img" autoplay muted loop playsinline>
+          <source src="videos/ma.mp4" type="video/mp4">
+        </video>
+        <h3>3D Modelling & Animation</h3>
+        <p><strong>Tool:</strong> Blender </p>
+        <p>
+          Basic blender knowledge
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <p>Email: digital.rikkyd@gmail.com</p>
+    <p>Instagram: <a href="https://www.instagram.com/wrikid/">Wrikid</a></p>
+    <p>GitHub: <a href="https://github.com/rikkyd">github.com/rikkyd</a></p>
+    <p>Itch.io: <a href="https://rikkyd.itch.io">itch.io/rikkyd</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Rizki Dharma Satya
+  </footer>
+
+</body>
+</html>
